@@ -1,0 +1,12 @@
+{
+    "name": "your/project-name",
+    "description": "A short description of your project",
+    "require": {
+        "twilio/sdk": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Your\\Namespace\\": "src/"
+        }
+    }
+}
