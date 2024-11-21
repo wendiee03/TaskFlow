@@ -1,3 +1,8 @@
-<?php 
+<?php
+require_once 'includes/Database.php';
+$db = new Database();
+$conn = $db->getConnection();
 
-$conn= new mysqli('localhost','root','','tms_db')or die("Could not connect to mysql".mysqli_error($con));
+if(!isset($_SESSION)) { 
+    session_start(); 
+} 
